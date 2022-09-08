@@ -5,7 +5,7 @@ public class Main {
         FacultyGriffindor[] griffindors = {
                 new FacultyGriffindor("Поттер", "Гарри", 12, 32, 65, 23, 76),
                 new FacultyGriffindor("Грейнджер","Гермиона",45,23,65,34,65),
-                new FacultyGriffindor("Уизл","Рон",23,32,7,45,76)
+                new FacultyGriffindor("Уизли","Рон",23,32,7,45,76)
         };
 
         FacultySlytherin[] slytherins = {
@@ -27,8 +27,15 @@ public class Main {
         };
 
         Hogwarts.getAllFacultyGriffindor(griffindors);
-
-
+        Hogwarts.getAllFacultySlytherin(slytherins);
+        Hogwarts.getAllFacultyHufflepuff(hufflepuffs);
+        Hogwarts.getAllFacultyRavenclaw(ravenclaws);
+        Hogwarts.compareStudentsHogwards(griffindors[1],slytherins[0]);
+        Hogwarts.compareStudentsHogwards(hufflepuffs[2], ravenclaws[1]);
+        FacultyGriffindor.compareStudentsGriffindor(griffindors[0],griffindors[2]);
+        FacultySlytherin.compareStudentsSlytherin(slytherins[2],slytherins[1]);
+        FacultyRavenclaw.compareStudentsRavenclaw(ravenclaws[2],ravenclaws[0]);
+        FacultyHufflepuff.compareStudentsHufflepuff(hufflepuffs[0],hufflepuffs[1]);
     }
 
 
